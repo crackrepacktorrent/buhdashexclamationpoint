@@ -46,7 +46,7 @@ export default function Layout(props: ParentProps) {
 					</ul>
 					<p class="pb-10">reach me at...</p>
 					<ul class="list-disc pl-6">
-						<li>ihackpigs&lt;at&gt;protonmail&lt;dot&gt;com</li>
+						<li>ihackpigs@protonmail.com</li>
 					</ul>
 				</aside>
 
@@ -120,7 +120,7 @@ export default function Layout(props: ParentProps) {
 							</a>
 						</div>
 						<p class="text-sm mt-1 text-gray-600">
-							ihackpigs&lt;at&gt;protonmail&lt;dot&gt;com
+							ihackpigs@protonmail.com
 						</p>
 					</div>
 				</div>
