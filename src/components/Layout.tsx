@@ -51,7 +51,7 @@ export default function Layout(props: ParentProps) {
 				</aside>
 
 				{/* Content */}
-				<main class="lg:pb-16">{props.children}</main>
+				<main class="lg:pb-[4vh]">{props.children}</main>
 
 				{/* Desktop nav */}
 				<nav
