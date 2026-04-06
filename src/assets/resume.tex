@@ -1,0 +1,147 @@
+\documentclass[a4paper]{article}
+    \usepackage{fullpage}
+    \usepackage{amsmath}
+    \usepackage{amssymb}
+    \usepackage{textcomp}
+    \usepackage[utf8]{inputenc}
+    \usepackage[T1]{fontenc}
+    \textheight=10in
+    \pagestyle{empty}
+    \raggedright
+    \usepackage{multicol}
+    \setlength{\multicolsep}{-3.0pt}
+    \setlength{\columnsep}{-1pt}
+    \usepackage[left=0.8in,right=0.8in,bottom=0.8in,top=0.8in]{geometry}
+
+    %\renewcommand{\encodingdefault}{cg}
+%\renewcommand{\rmdefault}{lgrcmr}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME %%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\area} [2] {
+    \vspace*{-9pt}
+    \begin{verse}
+        \textbf{#1}   #2
+    \end{verse}
+}
+
+\newcommand{\lineunder} {
+    \vspace*{-8pt} \\
+    \hspace*{-18pt} \hrulefill \\
+}
+
+\newcommand{\header} [1] {
+    {\hspace*{-18pt}\vspace*{6pt} \textsc{#1}}
+    \vspace*{-6pt} \lineunder
+}
+
+\newcommand{\employer} [3] {
+    { \textbf{#1} (#2)\\ \underline{\textbf{\emph{#3}}}\\  }
+}
+
+\newcommand{\contact} [3] {
+    \vspace*{-10pt}
+    \begin{center}
+        {\Huge \scshape {#1}}\\
+        #2 \\ #3
+    \end{center}
+    \vspace*{-8pt}
+}
+
+\newenvironment{achievements}{
+    \begin{list}
+        {$\bullet$}{\topsep 0pt \itemsep -2pt}}{\vspace*{4pt}
+    \end{list}
+}
+
+\newcommand{\schoolwithcourses} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+    \vspace*{5pt}
+}
+
+\newcommand{\school} [4] {
+    \textbf{#1} #2 $\bullet$ #3\\
+    #4 \\
+}
+% END RESUME DEFINITIONS %%%%%%%%%%%%%%%%%%%%%%%
+
+    \begin{document}
+\vspace*{-40pt}
+
+    
+
+%==== Profile ====%
+\vspace*{-10pt}
+\begin{center}
+	{\Huge \scshape {José A. Davila-Ciullo}}\\
+	  www.buhdashexclamationpoint.com \textbar{} jsdvlcll@gmail.com $\cdot$ 469-389-9800\\
+\end{center}
+
+%==== Education ====%
+\header{Education}
+\textbf{Stanford University}\hfill Stanford, CA\\
+Bachelors: Computer Science (Systems focus) \textit{GPA: 3.7} \hfill Sept 2020 - March 2025 \\
+Masters: Computer Science (Computer/network security focus) \hfill  Accepted, delaying entry\\
+\vspace{2.5mm}
+
+%------RELEVANT COURSEWORK-------
+\header{Relevant Coursework}
+\vspace{1mm}    
+        \begin{multicols}{5}
+            \begin{itemize}
+                \setlength\itemsep{1mm}
+                \item Operating Systems
+                \item Computer Networking
+                \item Compilers
+                \item Computer + Network Security
+                \item Advanced Cryptography
+                \item Blockchain Technology
+                \item Web Development
+                \item Designing Serious Games
+                \item Rusty Systems
+                \item Feminist Games Studio
+            \end{itemize}
+        \end{multicols}
+        \vspace{3mm}
+    %\resumeSubHeadingListEnd
+    
+%==== Experience ====%
+\header{Work Experience}
+\textbf{Tinuiti} \hfill Remote\\
+\textit{Software Engineer II} \hfill May 2025 - Present\\
+\begin{itemize} \itemsep 1pt
+    \item Designed a DuckDB-WASM-powered analytics platform to power our cross-channel metrics system, eliminating server fetch times and enabling real-time chart updates without more backend calls.
+    \item Built a matching frontend component library which included redesigned charts and tables, allowing users to create customized analytics dashboards with granular control now that our data was right in their browser.
+    \item Recruited as an intern and offered a full-time role as a result of my strong performance.
+
+\end{itemize}
+\textbf{Stanford Computer Science Department} \hfill Stanford, CA\\
+\textit{CS106A/B Teaching Assistant} \hfill March 2024 - April 2025\\
+\begin{itemize} \itemsep 1pt
+    \item Led weekly hour-long sections for 10+ students in Stanford's Programming Methodology/Abstractions courses, reinforcing concepts covered in lectures through engaging examples and group problem-solving.
+    \item Provided detailed feedback on student assignments weekly, identifying common misconceptions and individually guiding them to improve their understanding.
+    \item Held weekly office hours and LaIR to help students debug their assignments and answer any of their CS, university, life questions.
+\end{itemize}
+\textbf{Youth Alliance for Housing} \hfill New York City, NY\\
+\textit{Full Stack Dev/Security Zine Producer} \hfill Jun 2022 - Present\\
+\begin{itemize} \itemsep 1pt
+	\item Designed and developed the organization's central website (y4h.org) using SvelteKit and StoryBlok to share their initiatives and accrue new members.
+    \item Currently continue my involvement with the organization as a member and sole maintainer of the website's repo.
+\end{itemize}
+\textbf{Canyons Rock Climbing Gym} \hfill Dallas, TX\\
+\textit{Event Manager/Climbing Instructor/Desk} \hfill Jun 2019 - Aug 2021\\
+\begin{itemize} \itemsep 1pt
+	\item Directed gym community events including birthdays, lock-ins, climbing competitions, etc.
+	\item Managed front-desk operations, new member registrations/belaying lessons, and liability waivers.
+	\item Ran and managed kids climb with two other coworkers.
+\end{itemize}
+\header{Skills}
+\vspace{1mm}
+\begin{tabular}{ l l }
+	Programming Languages: & C, C++, Rust, Lua, Python, CSS, HTML, JavaScript, Solidity\\
+    Areas of Interest: & Game development, ECS, network/computer security, P2P protocols, fediverse
+\end{tabular}\\
+\end{document}

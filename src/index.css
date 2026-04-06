@@ -1,0 +1,9 @@
+@import 'tailwindcss';
+
+body {
+	font-family: verdana;
+}
+
+.active {
+	background-color: yellow;
+}
