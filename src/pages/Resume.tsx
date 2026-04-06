@@ -49,10 +49,6 @@ export default function Resume() {
 					<span>Bachelors: Computer Science (Systems focus) <span class="italic">GPA: 3.7</span></span>
 					<span>Sept 2020 - March 2025</span>
 				</div>
-				<div class="flex justify-between">
-					<span>Masters: Computer Science (Computer/network security focus)</span>
-					<span>Accepted, delaying entry</span>
-				</div>
 			</Section>
 
 			{/* Coursework */}
@@ -75,8 +71,8 @@ export default function Resume() {
 			<Section title="Work Experience">
 				<Job company="Tinuiti" location="Remote" title="Software Engineer II" dates="May 2025 - Present">
 					<li>Designed a DuckDB-WASM-powered analytics platform to power our cross-channel metrics system, eliminating server fetch times and enabling real-time chart updates without more backend calls.</li>
-					<li>Built a matching frontend component library which included redesigned charts and tables, allowing users to create customized analytics dashboards with granular control now that our data was right in their browser.</li>
-					<li>Recruited as an intern and offered a full-time role as a result of my strong performance.</li>
+					<li>Built a matching frontend component library including redesigned charts and tables, allowing users to create customized analytics dashboards with granular control now that our data was right in their browser.</li>
+					<li>Recruited as an intern and was later offered a full-time role. Now on the data engineering team, primarily writing Go, Java, and SQL.</li>
 				</Job>
 
 				<Job company="Stanford Computer Science Department" location="Stanford, CA" title="CS106A/B Teaching Assistant" dates="March 2024 - April 2025">
@@ -100,7 +96,7 @@ export default function Resume() {
 			{/* Skills */}
 			<Section title="Skills">
 				<div class="text-sm">
-					<p><span class="font-bold">Programming Languages:</span> C, C++, Rust, Lua, Python, CSS, HTML, JavaScript, Solidity</p>
+					<p><span class="font-bold">Programming Languages:</span> C/C++, Zig, Go, Rust, Java, Lua, Python, SQL, frontend stuff</p>
 					<p><span class="font-bold">Areas of Interest:</span> Game development, ECS, network/computer security, P2P protocols, fediverse</p>
 				</div>
 			</Section>
